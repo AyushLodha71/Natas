@@ -1,0 +1,8 @@
+Once logged in, view the source code.
+There you will see the encoded Secret and the function that encodes the input to compare.
+Now, you can reverse engineer and convert the encoded Secret to the input.
+To do that, firstly I will convert hex to binary, then reverse the output and finally use base64 to decode and get the Secret Code.
+In my case, the command I put in terminal to decode was:
+echo 3d3d516343746d4d6d6c315669563362 | xxd -r -p | rev | base64 -d
+
+Final Note: you will see a % symbol, but you ignore it.

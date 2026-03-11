@@ -1,0 +1,5 @@
+In this question, In the header editor of your choice, add a tag with:
+Header name: Cookie
+Header value: loggedin=1
+
+Then go on the website and reload. You will get the password. Now, If you go to Inspect->Network and select natas5.natas.labs.overthewire.org file and scroll down, in the ‘Request Headers’ section, you will see Cookie which is now loggedin=1. Earlier, it was loggedin=0. You can try other non-zero numbers and it will still work.

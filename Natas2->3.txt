@@ -1,0 +1,4 @@
+Go to inspect, then open the link in content. It should be something like ‘files/pixel.png’ then remove the pixel.png from url i.e. go to http://natas2.natas.labs.overthewire.org/files and you will see users.txt
+Password is in there
+Here is the Complete URL:
+http://natas2.natas.labs.overthewire.org/files/users.txt

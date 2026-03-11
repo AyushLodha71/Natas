@@ -1,0 +1,5 @@
+Go to website, then click the link to view the source code.
+There, you will see a line with the following code:
+include "includes/secret.inc";
+Then, edit the URL to /includes/secret.inc instead of /index-source.html
+There, you will get the secret key.

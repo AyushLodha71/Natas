@@ -1,0 +1,1 @@
+Press fn key with F12 to open inspect and then the password is in content division

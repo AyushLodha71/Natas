@@ -1,0 +1,3 @@
+Open the website In the text box, add the following text
+. /etc/natas_webpass/natas10 & head
+You will get the password for natas 10

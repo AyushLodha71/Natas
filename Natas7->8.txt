@@ -1,0 +1,6 @@
+Go to the website the click on Home or About.
+Then, go into inspect, there you will get the hint of where the password is saved. Now, enter that address for the page parameter instead of home or about.
+That is,
+http://natas7.natas.labs.overthewire.org/index.php?page=home
+should become
+http://natas7.natas.labs.overthewire.org/index.php?page=<password_location>

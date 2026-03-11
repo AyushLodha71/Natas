@@ -1,0 +1,4 @@
+Go to http://natas3.natas.labs.overthewire.org/robots.txt
+There you will see that a directory has been disallowed.
+But, you go to that directory by entering it into the url.
+Then you will see a file called users.txt with the password.
