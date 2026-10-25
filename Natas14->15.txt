@@ -1,0 +1,3 @@
+Just input the following in username and nothing or anything in password:
+natas15”-- 
+Note that the space at the end of -- is very important. If there is no space, then the thing after -- is not considered as a comment. If there is a space after -- then everything after that is considered as a comment and thus ignored.

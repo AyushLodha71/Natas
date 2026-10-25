@@ -1,0 +1,28 @@
+For this question, either run the Get_Natas15.sh or Post_Natas15.sh with the password you get. You will run the first command as follows:
+./Get_Natas15.sh ""
+OR
+./Post_Natas15.sh ""
+
+Now, you will recursively call the script and update the argument you are sending every time with the new letter you get when you run the script.
+So, if you get h when you run the script like:
+./Get_Natas15.sh ""
+Then, next time it will be,
+./Get_Natas15.sh "h"
+If you get P this time, you will run 
+./Get_Natas15.sh "hP"
+And So on.
+
+Now, the script is just an automation in which I am calling the website url with the parameters we are asked for. It checks all the characters and returns a statement:
+This user exists.
+Now, once I see that statement, I just send that letter to the user.
+
+IMPORTANT NOTE:
+I have also created a script called automate_script.sh
+It will directly give you the password (Will take ~4-5 minutes)
+
+If you want to use that, just run 
+./automate_script.sh <Script_Name>
+I.e. either:
+./automate_script.sh Get_Natas15.sh
+OR
+./automate_script.sh Post_Natas15.sh

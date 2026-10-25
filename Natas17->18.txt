@@ -1,0 +1,4 @@
+The question is similar to Natas15->16.txt. The main difference is that we use sleep feature of SQL to find out the characters of the password. I have created a bash script for automating this aswell. But, the crux of command is:
+natas18" AND IF(password like binary "a%", sleep(3), 1) -- 
+Then, you check for each character until the code sleeps for ~3 seconds. My Bash script checks the same.
+You can use it with automate_script.sh to get the final output directly

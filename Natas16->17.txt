@@ -1,0 +1,2 @@
+The process for this question is same as for Natas15->16. Just the difference is in the script names.
+Also, In this, we are using grep whereas in the previous one, we were submitting parameters which were used to query a database.
